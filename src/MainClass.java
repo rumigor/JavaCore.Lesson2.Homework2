@@ -31,15 +31,15 @@ public class MainClass {
 //        Создать квадратный двумерный целочисленный массив (количество строк и столбцов одинаковое),
 //        и с помощью цикла(-ов) заполнить его диагональные элементы единицами;
         int[][] matrix = new int[5][5];
-        Random random = new Random();
         for (int i = 0; i < matrix.length; i++) {
-            matrix[i][i] = random.nextInt(10);
-            matrix[i][matrix.length - 1 - i] = random.nextInt(10);
+            matrix[i][i] = 1;
+            matrix[i][matrix.length - 1 - i] = 1;
         }
         printMatrix(matrix);
 
 //        Задать одномерный массив и найти в нем минимальный и максимальный элементы (без помощи интернета);
         int [] minMax = new int[10];
+        Random random = new Random();
         for (int i = 0; i < minMax.length; i++){
             minMax[i] = random.nextInt(100) - 20;
         }
